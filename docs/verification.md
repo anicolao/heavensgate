@@ -33,3 +33,8 @@ Selected visual previews are versioned in `docs/previews/` for PR review.
 The opening-meld and two-Angel-choice clarifications are included in both
 rulebook editions. Each remains 16 pages; the print references use the same
 9.5-point body type on both paper sizes, avoiding a nearly empty overflow page.
+
+Page 4 now teaches Favor ranking and an untied draw example before explaining
+ties. Forgiveness and named Angel timing exceptions are reserved for the
+reference. Both regenerated rulebooks passed teaching-page overflow checks,
+retain 16 pages, and page 4 was rendered and visually checked in both sizes.
