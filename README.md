@@ -19,8 +19,16 @@ bun run dev
 Built with SvelteKit, TypeScript, and Bun, following the shared-component approach
 of Hell’s Bells and the physical print layouts of Pantheon. `bun run check`,
 `bun test`, and `bun run build` verify the project. The GitHub workflow builds
-the complete static site as a downloadable PR artifact. It does not merge or
-deploy the PR.
+the complete static site as a downloadable PR artifact and publishes a retained
+GitHub Pages preview at `https://anicolao.github.io/heavensgate/pr<number>/`.
+PR #1 is available at https://anicolao.github.io/heavensgate/pr1/.
+The workflow does not merge the PR.
+
+Production builds from `main` publish at https://anicolao.github.io/heavensgate/.
+Preview builds use their own base path and preserve other previews on `gh-pages`.
+Only the trusted `main` publisher deploys the combined Pages site; same-repository
+PRs stage their built files and dispatch that publisher. Fork PRs cannot stage
+or publish. This follows Hell’s Bells’ retained-preview convention.
 
 ## The tabletop kit
 
