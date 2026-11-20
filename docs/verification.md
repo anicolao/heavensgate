@@ -42,3 +42,8 @@ retain 16 pages, and page 4 was rendered and visually checked in both sizes.
 Reference-page cream is painted by the named A4/Letter page styles, covering
 the page margins as well as the content area. All 11 reference pages in each
 PDF were checked at edges and corners; both editions remain 16 pages.
+
+The rulebook print canvas also uses cream, preventing a white rectangle below
+the final reference fragment (section 10). Both final pages were rendered and
+visually checked; a full-page raster grid across every reference page in both
+editions found no white canvas pixels. Margins and 16-page counts are unchanged.
