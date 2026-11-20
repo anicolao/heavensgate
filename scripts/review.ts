@@ -21,8 +21,9 @@ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'
 await page.goto(`${origin}/rules.html`);await ready();await page.screenshot({path:'tmp/qa/rules-mobile.png'});const mobileRulesOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 await page.setViewportSize({width:1440,height:1100});await page.screenshot({path:'tmp/qa/rules-desktop.png'});const lessons=await page.locator('.learn-page').count();const referenceHeadings=await page.locator('.reference-book h2').count();
 await pdf('heavens-gate-rulebook');await page.evaluate(()=>document.body.dataset.rulePaper='letter');await pdf('heavens-gate-rulebook-letter');await page.evaluate(()=>delete document.body.dataset.rulePaper);
-await page.goto(`${origin}/gallery/print`);await ready();await page.screenshot({path:'tmp/qa/print-desktop.png'});
+await page.goto(`${origin}/gallery/print`);await page.locator('.print-main[data-ready=true]').waitFor();await ready();await page.screenshot({path:'tmp/qa/print-desktop.png'});
 const printOverflows=[];
+const accessoryLayoutFailures=[];
 for(const paper of ['a4','letter']){
  await page.getByRole('combobox',{name:'Paper',exact:true}).selectOption(paper);
  for(const [value,label] of [['false','color'],['true','low-ink']]){
@@ -32,10 +33,17 @@ for(const paper of ['a4','letter']){
  }
  if(paper==='a4'){await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('false');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('front');await pdf('heavens-gate-cards-a4-fronts');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('both');}
  await page.getByRole('combobox',{name:'Components',exact:true}).selectOption('accessories');
+ await page.locator('.sheets[data-kit=accessories]').waitFor();
+ await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('true');
+ if(await page.locator('.sheets .game-card').count())throw new Error('Accessories must not contain cards');
+ await page.emulateMedia({media:'print'});
+ const badTracks=await page.locator('.accessory-sheet').evaluateAll(sheets=>sheets.map((sheet,i)=>{const tracks=Array.from(sheet.querySelectorAll('.favor-track')).map(t=>t.getBoundingClientRect());return tracks.length>1&&(Math.abs(tracks[0].left-tracks[1].left)>1||tracks[1].top<tracks[0].bottom)?i:null;}).filter(i=>i!==null));
+ accessoryLayoutFailures.push(...badTracks.map(sheet=>({paper,sheet})));
+ await page.emulateMedia({media:'screen'});
  await pdf(`heavens-gate-accessories-${paper}`);
  await page.getByRole('combobox',{name:'Components',exact:true}).selectOption('cards');
 }
 await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tmp/qa/print-mobile.png'});const mobilePrintOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
-const report={errors,allCount,decreeCount,searchCount,backCount,cardOverflow,printOverflows,mobileGalleryOverflow,mobileRulesOverflow,mobilePrintOverflow,lessons,referenceHeadings};
+const report={errors,allCount,decreeCount,searchCount,backCount,cardOverflow,printOverflows,accessoryLayoutFailures,mobileGalleryOverflow,mobileRulesOverflow,mobilePrintOverflow,lessons,referenceHeadings};
 await writeFile('tmp/qa/report.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));await browser.close();
-if(errors.length||allCount!==27||decreeCount!==10||searchCount!==1||backCount!==10||cardOverflow.length||printOverflows.some(s=>s.failures.length)||mobileGalleryOverflow||mobileRulesOverflow||mobilePrintOverflow||lessons!==5||referenceHeadings!==10)process.exit(1);
+if(errors.length||allCount!==27||decreeCount!==10||searchCount!==1||backCount!==10||cardOverflow.length||printOverflows.some(s=>s.failures.length)||accessoryLayoutFailures.length||mobileGalleryOverflow||mobileRulesOverflow||mobilePrintOverflow||lessons!==5||referenceHeadings!==10)process.exit(1);
