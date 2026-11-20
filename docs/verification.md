@@ -18,7 +18,7 @@ Verified on 20 November 2026 before opening the initial illustrated-components P
   reference-page margins, page numbers, formation examples, and scoring tables.
 - All nine PDFs were reopened and their page sizes and nonempty content checked.
   A4 and Letter rulebooks each contain 16 pages; complete card decks each contain
-  six pages; A4 fronts-only contains three; table essentials each contain five.
+  six pages; A4 fronts-only contains three; five-player table essentials each contain six, including two region mats.
 - PDF color streams are compressed while text remains vector and transparency
   masks remain lossless. Original source PNGs and SVG layers are unchanged.
 

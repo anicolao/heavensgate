@@ -36,6 +36,7 @@ for(const paper of ['a4','letter']){
  await page.locator('.sheets[data-kit=accessories]').waitFor();
  await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('true');
  if(await page.locator('.sheets .game-card').count())throw new Error('Accessories must not contain cards');
+ if(await page.locator('.accessory-sheet .zone-mat').count()!==2)throw new Error('Both Sanctuary Angels require region mats');
  await page.emulateMedia({media:'print'});
  const badTracks=await page.locator('.accessory-sheet').evaluateAll(sheets=>sheets.map((sheet,i)=>{const tracks=Array.from(sheet.querySelectorAll('.favor-track')).map(t=>t.getBoundingClientRect());return tracks.length>1&&(Math.abs(tracks[0].left-tracks[1].left)>1||tracks[1].top<tracks[0].bottom)?i:null;}).filter(i=>i!==null));
  accessoryLayoutFailures.push(...badTracks.map(sheet=>({paper,sheet})));
