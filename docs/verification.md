@@ -38,3 +38,7 @@ Page 4 now teaches Favor ranking and an untied draw example before explaining
 ties. Forgiveness and named Angel timing exceptions are reserved for the
 reference. Both regenerated rulebooks passed teaching-page overflow checks,
 retain 16 pages, and page 4 was rendered and visually checked in both sizes.
+
+Reference-page cream is painted by the named A4/Letter page styles, covering
+the page margins as well as the content area. All 11 reference pages in each
+PDF were checked at edges and corners; both editions remain 16 pages.
