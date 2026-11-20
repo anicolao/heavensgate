@@ -3,9 +3,11 @@
 Requires PyMuPDF. Original source paintings and layered SVGs are untouched.
 """
 from pathlib import Path
+import sys
 import fitz
 
-for path in sorted(Path('static/downloads').glob('*.pdf')):
+paths = [Path(arg) for arg in sys.argv[1:]] if sys.argv[1:] else sorted(Path('static/downloads').glob('*.pdf'))
+for path in paths:
     before = path.stat().st_size
     document = fitz.open(path)
     seen = set()
