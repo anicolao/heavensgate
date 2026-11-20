@@ -30,7 +30,7 @@ pages alternate fronts and horizontally mirrored backs for long-edge duplex.
 The print shop supports A4 and US Letter, full color or low ink, collection
 filters, fronts/backs separately, and back-alignment offsets.
 
-Table essentials include five Favor tracks, a Sanctuary/Purgatory region mat,
+Table essentials include five Favor tracks, two Sanctuary/Purgatory region mats (so both Sanctuary Angels can play),
 and a five-player score ledger. Choose fewer players in the print shop to reduce
 track quantities. Bring an opaque bag, coins for Favor, and pencils. Tiles and
 racks are deliberately not included in the printable kit.
