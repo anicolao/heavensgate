@@ -51,6 +51,12 @@ remain separate on their owner’s rack.
 
 ## Rules and card text
 
+At game setup, deal two Angels to each player and let them choose one, revealing
+choices together. Keep the chosen Angels for all three rounds. Each round, a
+player must first meld a complete legal formation entirely from their own hand;
+there is no 30-point minimum. They may then extend or rearrange Heaven in that
+same Organize action and on later turns.
+
 [`HEAVENS_GATE_RULES.md`](HEAVENS_GATE_RULES.md) is authoritative and contains all
 confirmed rulings. The two earlier Markdown files are historical inputs.
 `bun run catalog` extracts complete Angel, Decree, and Judgment rules into
@@ -93,6 +99,8 @@ PDFs. It uses Playwright’s installed Chromium, or
 `PLAYWRIGHT_CHROMIUM_EXECUTABLE`. On macOS it can use an existing Playwright cache.
 On a fresh machine, `bunx playwright install chromium` installs the browser.
 Set `REVIEW_URL` for another server URL.
+
+`bun run book:export` refreshes just the two rulebook PDFs after rules edits.
 
 `python3 scripts/optimize-pdfs.py` (requires PyMuPDF) compresses PDF color streams
 while retaining vector text and alpha masks. This leaves original art untouched.

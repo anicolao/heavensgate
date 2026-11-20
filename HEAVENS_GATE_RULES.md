@@ -1,12 +1,12 @@
 # Heaven's Gate
 
-Authoritative rules · All rulings confirmed · 19 November 2026
+Authoritative rules · All rulings confirmed · 20 November 2026
 
 Three rounds of divine organization, ambitious angels, and heavenly bureaucracy.
 
 This is the complete rules reference for Heaven's Gate. It consolidates the
 original rules and playtest sheet with subsequent rulings. All procedures needed
-to play are specified here. All 26 final consolidation choices have been
+to play are specified here. All rules and subsequent clarifications are
 confirmed; no questions or rulings remain pending.
 
 **Design principle:** Apart from the existing Favor tracks, scores (including
@@ -39,14 +39,17 @@ in control, not hidden from view. A Purgatory holds at most one soul.
 
 1. Randomly determine a first player for round one. Play clockwise. The first
    player moves one seat clockwise for each later round.
-2. Shuffle the Angel cards and deal one to each player. Reveal them. Keep the
-   same Angel throughout the game; set unused Angels aside.
+2. Shuffle the Angel cards and deal **two to each player** privately. Each
+   player chooses one. Reveal the chosen Angels together once everyone has
+   decided, and set all unchosen and undealt Angels aside. Keep your chosen
+   Angel throughout all three rounds.
 3. Shuffle the ten ordinary Decrees. Use the top card in round one and the next
    card in round two, without replacement. Shuffle the five Final Judgments and
    use one in round three. Only the current round's card applies.
 4. At the start of each round, return all 106 souls to the bag and mix them.
    Clear Heaven and all special zones. Reset powers to unused and Favor to zero.
-   Deal each player 14 random souls privately.
+   Deal each player 14 random souls privately. Everyone must make a new opening
+   meld each round; place your Angel above your rack to show you have not opened.
 5. Reveal the current round's decree before anyone takes a turn. In round three,
    resolve any setup instructions after players have seen their hands and before
    the first turn. Previous ordinary decrees do not carry into round three.
@@ -74,9 +77,19 @@ over examples or card shorthand.
 
 ### Rearranging Heaven
 
-During an Organize action you may split, combine, and rebuild any unprotected
-formations, and contribute souls from your hand. You may use Heaven immediately:
-there is **no 30-point opening requirement**.
+There is **no 30-point opening requirement**. Before extending or rearranging
+Heaven, you must make an **opening meld**: one complete legal formation entirely
+from your own hand. Follow the active decree; jokers are allowed normally.
+No souls from Heaven or an opponent may help complete your opening.
+
+Open **once per round**. After placing that formation, you may immediately play
+single souls, rearrange unprotected Heaven, and use organizing powers in the same
+Organize action. On later turns, no new complete hand formation is required.
+Organizing powers cannot bypass opening; other powers retain their normal timing.
+
+Show an unopened Angel above your rack. Once opened, move it beside your Favor
+track; turning it sideways still shows a used power. Reset its opening position
+each round. No extra marker is needed.
 
 At the end of every completed action, every soul in Heaven must belong to a legal
 formation. You may not take souls from Heaven into a hand or Purgatory unless a
@@ -85,7 +98,8 @@ power explicitly allows it. Sanctuary ownership limits who may move its tiles.
 If an attempted Organize action cannot be completed legally, restore all tiles
 and zones to their positions before the attempt, cancel powers attempted as part
 of that action, and draw instead. There is no additional penalty or turn timer.
-An earlier, separately completed power remains resolved and spent.
+An earlier, separately completed power remains resolved and spent. An opening
+meld made only in the canceled action does not count; restore its opening status.
 
 ### Jokers
 
@@ -113,6 +127,8 @@ Choose one ordinary action:
   legally. A successful Forgiveness, Penance, Sanctuary, Communion, or
   Transfiguration activation may instead supply this action, subject to its
   own conditions, even if you contribute no hand soul where that power allows it.
+  On your opening turn, first meld a complete formation from your own hand as
+  described above; organizing powers never waive that requirement.
 - **Draw:** Inspect the number of bag souls allowed by Divine Favor, keep one,
   and return the others. You may draw even if you could play. Drawing ends your
   turn; the drawn soul cannot be played on that turn.
