@@ -7,7 +7,7 @@ describe('Complete tabletop set',()=>{
  test('contains 27 unique cards and complete rules extracted from the authority',()=>{
   expect([angels.length,decrees.length,judgments.length]).toEqual([12,10,5]);
   expect(new Set(allCards.map(c=>c.id)).size).toBe(27);
-  for(const c of allCards){expect(c.copy.length).toBeGreaterThan(30);expect(c.rule.length).toBeGreaterThan(30);}
+  for(const c of allCards){expect(c.brief.trim().length).toBeGreaterThan(0);expect(c.detailed.length).toBeGreaterThan(30);}
  });
  for(const paper of ['a4','letter'] as const){
   test(`${paper}: every front has the correct long-edge mirrored back`,()=>{
@@ -33,10 +33,14 @@ describe('Complete tabletop set',()=>{
   const ids=[...allCards.map(c=>c.id),'frame'];
   for(const id of ids){const stats=await sharp(`static/art/source/${id}.png`).stats();const alpha=stats.channels[3];expect(alpha).toBeDefined();expect(alpha.min).toBe(0);expect(alpha.max).toBeGreaterThanOrEqual(250);}
  },30000);
- test('all layered fronts and backs embed their assets and retain native editable text',()=>{
-  for(const id of [...allCards.map(c=>c.id),'back-angel','back-decree','back-judgment']){
+ test('layered fronts retain editable text and painted backs contain no text overlays',()=>{
+  for(const id of allCards.map(c=>c.id)){
    const svg=readFileSync(`static/art/layers/${id}.svg`,'utf8');
    expect(svg).toContain('inkscape:groupmode="layer"');expect(svg).toContain('id="typography"');expect(svg).toContain('<text ');expect(svg).toContain('data:image/webp;base64,');expect(svg).toContain('data:font/woff2;base64,');
+  }
+  for(const kind of ['angel','decree','judgment']){
+   const svg=readFileSync(`static/art/layers/back-${kind}.svg`,'utf8');
+   expect(svg).toContain('data:image/webp;base64,');expect(svg).not.toContain('<text ');expect(svg).not.toContain('id="typography"');
   }
  });
 });

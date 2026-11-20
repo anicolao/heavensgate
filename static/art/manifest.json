@@ -16,6 +16,14 @@
     "output": "/art/cards/chamuel.webp"
   },
   {
+    "id": "back-decree",
+    "source": "static/art/source/back-decree.png",
+    "width": 1060,
+    "height": 1484,
+    "hasAlpha": false,
+    "output": "/art/cards/back-decree.webp"
+  },
+  {
     "id": "decree-9",
     "source": "static/art/source/decree-9.png",
     "width": 1312,
@@ -30,6 +38,14 @@
     "height": 1199,
     "hasAlpha": true,
     "output": "/art/cards/decree-8.webp"
+  },
+  {
+    "id": "back-angel",
+    "source": "static/art/source/back-angel.png",
+    "width": 1061,
+    "height": 1483,
+    "hasAlpha": false,
+    "output": "/art/cards/back-angel.webp"
   },
   {
     "id": "selaphiel",
@@ -230,5 +246,13 @@
     "height": 1142,
     "hasAlpha": true,
     "output": "/art/cards/raguel.webp"
+  },
+  {
+    "id": "back-judgment",
+    "source": "static/art/source/back-judgment.png",
+    "width": 1060,
+    "height": 1484,
+    "hasAlpha": false,
+    "output": "/art/cards/back-judgment.webp"
   }
 ]

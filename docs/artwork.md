@@ -13,6 +13,11 @@ Inkscape layers and editable SVG text. Illustrations remain embedded raster art;
 the SVG is an editable composition, not a claim that the painting is vector art.
 Original high-resolution PNGs remain in `static/art/source/`.
 
+The three card backs are complete, distinct paintings, not compositions of HTML
+or live type. Angels use wings and halos, Decrees use scrolls and a solar seal,
+and Final Judgment uses gold scales with blue enamel accents. Their SVG source
+wrappers embed only the artwork image. Prompts are in `static/art/back-prompts.json`.
+
 To change art, supply a new transparent foreground PNG at the matching ID, run
 `bun run art:prepare`, then refresh `bun run art:layers` against the dev server.
 To change a rule, edit the authoritative Markdown and regenerate the catalog;
