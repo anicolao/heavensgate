@@ -14,7 +14,7 @@ const allCount=await page.locator('.gallery-item').count();
 const faceText=await page.locator('.gallery-item .effect').allTextContents();
 const briefOnly=faceText.length===allCards.length&&faceText.every((text,i)=>text===allCards[i].brief);
 const footers=await page.locator('.gallery-item footer').allTextContents();
-const numberedSet=footers.length===allCards.length&&footers.every((text,i)=>text.includes("Heaven's Gate")&&text.includes(`${allCards[i].code} · ${i+1} of ${allCards.length}`));
+const numberedSet=footers.length===allCards.length&&footers.every((text,i)=>text.includes("Higher Powers")&&text.includes(`${allCards[i].code} · ${i+1} of ${allCards.length}`));
 const cardOverflow=await overflow();
 await page.screenshot({path:'tmp/qa/gallery-desktop.png',fullPage:true});
 await page.getByRole('button',{name:'Inspect Raphael',exact:true}).click();await page.getByRole('dialog').waitFor({state:'visible'});await page.screenshot({path:'tmp/qa/inspector.png'});await page.keyboard.press('Escape');
@@ -28,7 +28,7 @@ await page.getByLabel('Show card backs',{exact:true}).uncheck();
 await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tmp/qa/gallery-mobile.png'});const mobileGalleryOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 await page.goto(`${origin}/rules.html`);await ready();await page.screenshot({path:'tmp/qa/rules-mobile.png'});const mobileRulesOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
 await page.setViewportSize({width:1440,height:1100});await page.screenshot({path:'tmp/qa/rules-desktop.png'});const lessons=await page.locator('.learn-page').count();const referenceHeadings=await page.locator('.reference-book h2').count();
-await pdf('heavens-gate-rulebook');await page.evaluate(()=>document.body.dataset.rulePaper='letter');await pdf('heavens-gate-rulebook-letter');await page.evaluate(()=>delete document.body.dataset.rulePaper);
+await pdf('higher-powers-rulebook');await page.evaluate(()=>document.body.dataset.rulePaper='letter');await pdf('higher-powers-rulebook-letter');await page.evaluate(()=>delete document.body.dataset.rulePaper);
 await page.goto(`${origin}/gallery/print`);await page.locator('.print-main[data-ready=true]').waitFor();await ready();await page.screenshot({path:'tmp/qa/print-desktop.png'});
 const printOverflows=[];
 const accessoryLayoutFailures=[];
@@ -37,9 +37,9 @@ for(const paper of ['a4','letter']){
  for(const [value,label] of [['false','color'],['true','low-ink']]){
   await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption(value);await ready();
   await page.emulateMedia({media:'print'});const failures=await overflow();printOverflows.push({paper,style:label,failures});await page.emulateMedia({media:'screen'});
-  await pdf(`heavens-gate-cards-${paper}-${label}`);
+  await pdf(`higher-powers-cards-${paper}-${label}`);
  }
- if(paper==='a4'){await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('false');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('front');await pdf('heavens-gate-cards-a4-fronts');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('both');}
+ if(paper==='a4'){await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('false');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('front');await pdf('higher-powers-cards-a4-fronts');await page.getByRole('combobox',{name:'Print sides',exact:true}).selectOption('both');}
  await page.getByRole('combobox',{name:'Components',exact:true}).selectOption('accessories');
  await page.locator('.sheets[data-kit=accessories]').waitFor();
  await page.getByRole('combobox',{name:'Artwork',exact:true}).selectOption('true');
@@ -49,7 +49,7 @@ for(const paper of ['a4','letter']){
  const badTracks=await page.locator('.accessory-sheet').evaluateAll(sheets=>sheets.map((sheet,i)=>{const tracks=Array.from(sheet.querySelectorAll('.favor-track')).map(t=>t.getBoundingClientRect());return tracks.length>1&&(Math.abs(tracks[0].left-tracks[1].left)>1||tracks[1].top<tracks[0].bottom)?i:null;}).filter(i=>i!==null));
  accessoryLayoutFailures.push(...badTracks.map(sheet=>({paper,sheet})));
  await page.emulateMedia({media:'screen'});
- await pdf(`heavens-gate-accessories-${paper}`);
+ await pdf(`higher-powers-accessories-${paper}`);
  await page.getByRole('combobox',{name:'Components',exact:true}).selectOption('cards');
 }
 await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tmp/qa/print-mobile.png'});const mobilePrintOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);

@@ -19,7 +19,7 @@ try{
   await page.evaluate(paper=>{if(paper==='letter')document.body.dataset.rulePaper='letter';else delete document.body.dataset.rulePaper;},paper);
   const overflow=await page.locator('.learn-page:not(.cover-page)').evaluateAll(pages=>pages.filter(p=>p.scrollHeight>p.clientHeight+2).map(p=>p.getAttribute('data-page')));
   if(overflow.length)throw new Error(`${paper} teaching pages overflow: ${overflow}`);
-  const path=`static/downloads/heavens-gate-rulebook${paper==='letter'?'-letter':''}.pdf`;
+  const path=`static/downloads/higher-powers-rulebook${paper==='letter'?'-letter':''}.pdf`;
   await page.pdf({path,preferCSSPageSize:true,printBackground:true,displayHeaderFooter:false});
   console.log(`Exported ${path}`);
  }

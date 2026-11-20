@@ -1,4 +1,4 @@
-# Heaven's Gate — One-page playtest sheet
+# Higher Powers — One-page playtest sheet
 *Working prototype · 3 rounds · Standard 106-tile Rummikub set*
 
 **Premise.** Twelve ambitious angels organize numbered souls into Heaven's Grand Order. God changes the rules each round. Deliver your whole hand first; undelivered souls count against their keepers.

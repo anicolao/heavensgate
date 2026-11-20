@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "heavens-gate",
+      "name": "higher-powers",
       "dependencies": {
         "@fontsource/atkinson-hyperlegible": "5.2.8",
         "@fontsource/cormorant-garamond": "5.2.11",

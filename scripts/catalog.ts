@@ -1,5 +1,5 @@
 import {readFileSync, writeFileSync} from 'node:fs';
-const source = readFileSync('HEAVENS_GATE_RULES.md', 'utf8');
+const source = readFileSync('HIGHER_POWERS_RULES.md', 'utf8');
 const angelSection = source.split('## 7. The twelve Angels')[1].split('## 8.')[0];
 const angels = [...angelSection.matchAll(/### ([^\n]+) — ([^\n]+)\n\n([\s\S]+?)(?=\n### |$)/g)].map(m => ({id: m[1].toLowerCase(), name: m[1], title: m[2], detailed: m[3].trim(), kind: 'angel'}));
 const decrees = [...source.split('## 8. Ordinary Heavenly Decrees')[1].split('## 9.')[0].matchAll(/^\| \*\*(\d+)\. ([^*]+)\*\* \| (.+) \|$/gm)].map(m => ({id: `decree-${m[1]}`, name:m[2], title: 'Heavenly Decree', detailed:m[3], kind:'decree'}));

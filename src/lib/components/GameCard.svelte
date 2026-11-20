@@ -13,7 +13,7 @@
   <div class="card-lettering" data-layer="typography">
    <header data-fit="title"><span>{card.kind==='angel'?'ANGEL':card.kind==='decree'?'HEAVENLY DECREE':'FINAL JUDGMENT'}</span><h3>{card.name}</h3></header>
    <div class="copy-panel" data-fit="copy">{#if card.kind==='angel'}<h4>{card.title}</h4>{/if}<p class="timing">{card.timing}</p><p class="effect">{card.brief}</p></div>
-   <footer><span>Heaven's Gate</span><span>{card.code} · {card.number} of {cardTotal}</span></footer>
+   <footer><span>Higher Powers</span><span>{card.code} · {card.number} of {cardTotal}</span></footer>
   </div>
   {#if !mono}<img class="frame-layer" data-layer="frame" src={`${base}/art/cards/frame.webp`} alt="" draggable="false"/>{/if}
  {/if}

@@ -1,10 +1,10 @@
-# Heaven's Gate
+# Higher Powers
 
 Authoritative rules · All rulings confirmed · 20 November 2026
 
 Three rounds of divine organization, ambitious angels, and heavenly bureaucracy.
 
-This is the complete rules reference for Heaven's Gate. It consolidates the
+This is the complete rules reference for Higher Powers. It consolidates the
 original rules and playtest sheet with subsequent rulings. All procedures needed
 to play are specified here. All rules and subsequent clarifications are
 confirmed; no questions or rulings remain pending.

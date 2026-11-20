@@ -1,4 +1,4 @@
-# Heaven's Gate
+# Higher Powers
 ## Playtest Rules — Version 0.2
 
 *A game of divine organization, ambitious angels, and heavenly bureaucracy.*

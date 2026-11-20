@@ -30,7 +30,7 @@ const presentation:Record<string,[string,string]> = {
  'judgment-4':['Round three','Start with one Favor for each player ahead of you in the standings.'],
  'judgment-5':['Round three','Win this round to erase your worst score from an earlier round.']
 };
-function cards(items:typeof catalog.angels,prefix:string,offset:number):Card[] {return items.map((c,i)=>{if(!presentation[c.id]) throw new Error(`Missing brief text: ${c.id}`);return {...c,kind:c.kind as Kind,timing:presentation[c.id][0],brief:presentation[c.id][1],code:`HG-${prefix}${String(i+1).padStart(2,'0')}`,number:offset+i+1};});}
+function cards(items:typeof catalog.angels,prefix:string,offset:number):Card[] {return items.map((c,i)=>{if(!presentation[c.id]) throw new Error(`Missing brief text: ${c.id}`);return {...c,kind:c.kind as Kind,timing:presentation[c.id][0],brief:presentation[c.id][1],code:`HP-${prefix}${String(i+1).padStart(2,'0')}`,number:offset+i+1};});}
 export const angels=cards(catalog.angels,'A',0), decrees=cards(catalog.decrees,'D',catalog.angels.length), judgments=cards(catalog.judgments,'J',catalog.angels.length+catalog.decrees.length);
 export const allCards=[...angels,...decrees,...judgments];
 export const cardTotal=allCards.length;

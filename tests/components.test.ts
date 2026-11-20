@@ -25,7 +25,7 @@ describe('Complete tabletop set',()=>{
   const a=sheets[2].cards[0],b=sheets[3].cards[0];expect(a.x+b.x+63).toBeCloseTo(211);expect(b.y).toBe(a.y-1);
  });
  test('confirmed rules remain present',()=>{
-  const text=readFileSync('HEAVENS_GATE_RULES.md','utf8');
+  const text=readFileSync('HIGHER_POWERS_RULES.md','utf8');
   expect(text).toContain('Favor never decreases');expect(text).toContain('Purgatory may remain occupied');
   expect(text).toContain('Record that\ncredit on the scoresheet immediately: it is final.');
  });

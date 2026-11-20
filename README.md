@@ -1,4 +1,4 @@
-# Heaven’s Gate
+# Higher Powers
 
 A painterly tabletop game of divine organization and heavenly bureaucracy for
 3–5 players. Three rounds, twelve Angels, and one promotion. Bring a standard
@@ -20,11 +20,11 @@ Built with SvelteKit, TypeScript, and Bun, following the shared-component approa
 of Hell’s Bells and the physical print layouts of Pantheon. `bun run check`,
 `bun test`, and `bun run build` verify the project. The GitHub workflow builds
 the complete static site as a downloadable PR artifact and publishes a retained
-GitHub Pages preview at `https://anicolao.github.io/heavensgate/pr<number>/`.
+GitHub Pages preview at `https://anicolao.github.io/higherpowers/pr<number>/`.
 Each PR’s preview URL is listed in its workflow summary.
 The workflow does not merge the PR.
 
-Production builds from `main` publish at https://anicolao.github.io/heavensgate/.
+Production builds from `main` publish at https://anicolao.github.io/higherpowers/.
 Preview builds use their own base path and preserve other previews on `gh-pages`.
 Only the trusted `main` publisher deploys the combined Pages site; same-repository
 PRs stage their built files and dispatch that publisher. Fork PRs cannot stage
@@ -33,7 +33,7 @@ or publish. This follows Hell’s Bells’ retained-preview convention.
 ## The tabletop kit
 
 Print one each of **12 Angel cards, 10 Heavenly Decrees, and 5 Final Judgments**.
-Every card measures **63 × 88 mm**. Front footers show “Heaven’s Gate” on the
+Every card measures **63 × 88 mm**. Front footers show “Higher Powers” on the
 left and a unique category code plus a global set number (1–27) on the right. Category-specific backs conceal identities;
 pages alternate fronts and horizontally mirrored backs for long-edge duplex.
 The print shop supports A4 and US Letter, full color or low-ink fronts with
@@ -59,7 +59,7 @@ player must first meld a complete legal formation entirely from their own hand;
 there is no 30-point minimum. They may then extend or rearrange Heaven in that
 same Organize action and on later turns.
 
-[`HEAVENS_GATE_RULES.md`](HEAVENS_GATE_RULES.md) is authoritative and contains all
+[`HIGHER_POWERS_RULES.md`](HIGHER_POWERS_RULES.md) is authoritative and contains all
 confirmed rulings. The two earlier Markdown files are historical inputs.
 `bun run catalog` extracts complete Angel, Decree, and Judgment rules into
 `src/lib/data/catalog.json`. Every card has `brief` and `detailed` text metadata. The friendly `brief` text
@@ -117,7 +117,7 @@ ignored `tmp/qa/` when review runs.
 
 ## License
 
-Copyright (c) 2026 Heaven’s Gate contributors. Code, rules, generated artwork,
+Copyright (c) 2026 Higher Powers contributors. Code, rules, generated artwork,
 layered sources, and printable components are distributed under **GPL-3.0-only**;
 see [LICENSE](LICENSE). Bundled fonts retain their upstream licenses, reproduced
 in `docs/licenses/`. Rummikub is a third-party game; this project supplies an

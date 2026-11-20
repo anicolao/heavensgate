@@ -22,8 +22,8 @@
 @media print {
  /* Keep the print canvas cream below the final reference fragment. */
  html:has(.rulebook), body:has(.rulebook) { background: #fffdf6!important; }
- @page reference-a4 { size: A4 portrait; margin: 14mm 16mm; background: #fffdf6; @bottom-center { content: "HEAVEN’S GATE · " counter(page); font-family: sans-serif; font-size: 7pt; color: #795c2b; } }
- @page reference-letter { size: letter portrait; margin: 14mm 16mm; background: #fffdf6; @bottom-center { content: "HEAVEN’S GATE · " counter(page); font-family: sans-serif; font-size: 7pt; color: #795c2b; } }
+ @page reference-a4 { size: A4 portrait; margin: 14mm 16mm; background: #fffdf6; @bottom-center { content: "HIGHER POWERS · " counter(page); font-family: sans-serif; font-size: 7pt; color: #795c2b; } }
+ @page reference-letter { size: letter portrait; margin: 14mm 16mm; background: #fffdf6; @bottom-center { content: "HIGHER POWERS · " counter(page); font-family: sans-serif; font-size: 7pt; color: #795c2b; } }
  .reference-book { page: reference-a4; padding: 0; }
  body[data-rule-paper=letter] .reference-book { page: reference-letter; }
  .learn-page::after { content: attr(data-page); position: absolute; bottom: 5mm; right: 16mm; font: 7pt sans-serif; color: #795c2b; }

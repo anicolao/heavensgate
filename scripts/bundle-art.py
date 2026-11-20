@@ -2,7 +2,7 @@
 from pathlib import Path
 import zipfile
 
-output = Path('static/downloads/heavens-gate-layered-art.zip')
+output = Path('static/downloads/higher-powers-layered-art.zip')
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
     for path in sorted(Path('static/art/layers').glob('*.svg')):
         archive.write(path, 'layers/' + path.name)

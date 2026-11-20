@@ -11,7 +11,7 @@ Verified on 20 November 2026 for the card-art and typography polish PR.
   numbers, three image-only backs without text overlays, no browser exceptions,
   no card text overflow in any of four print variants, and no horizontal overflow
   on 390-pixel mobile screens in gallery, rules, or print shop.
-- `PUBLIC_BASE_PATH=/heavensgate bun run build`: static build passed. The home,
+- `PUBLIC_BASE_PATH=/higherpowers bun run build`: static build passed. The home,
   gallery, print shop, and rules loaded from a plain static server under that
   repository prefix with HTTP 200, complete images, and no browser exceptions.
 - Original artwork and complete print sheets were visually inspected. Both
@@ -47,3 +47,10 @@ The rulebook print canvas also uses cream, preventing a white rectangle below
 the final reference fragment (section 10). Both final pages were rendered and
 visually checked; a full-page raster grid across every reference page in both
 editions found no white canvas pixels. Margins and 16-page counts are unchanged.
+
+Higher Powers rebrand: all current source text, document names, card footers and
+HP set codes, page titles, prompts, links, and download names were audited.
+All nine PDFs and the layered-art bundle were regenerated and searched for the
+retired title. Desktop/mobile browser review passed with 27 numbered cards,
+no clipped text, no browser errors, and both paper sizes. The home, gallery,
+inspector, print sheet, cover, and Favor lesson previews were refreshed.

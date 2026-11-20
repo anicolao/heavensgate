@@ -44,7 +44,7 @@ jobs:
           PUBLIC_BASE_PATH: ${{ steps.destination.outputs.base }}
       - uses: actions/upload-artifact@v4
         with:
-          name: heavens-gate-gallery-rulebook-and-print-kit
+          name: higher-powers-gallery-rulebook-and-print-kit
           path: build/
           retention-days: 14
       - name: Retain this build on the Pages branch
