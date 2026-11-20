@@ -1,13 +1,14 @@
 # Production verification
 
-Verified on 20 November 2026 before opening the initial illustrated-components PR.
+Verified on 20 November 2026 for the card-art and typography polish PR.
 
 - `bun run check`: zero errors and zero warnings.
-- `bun test`: seven tests passed, 851 assertions, covering the complete catalog,
+- `bun test`: seven tests passed, 845 assertions, covering the complete catalog,
   physical cut-mark bounds, both paper sizes, duplex mirroring including partial
   sheets, genuine alpha in all foreground PNGs, and editable self-contained SVGs.
 - `bun run review`: 27 gallery cards, ten Decrees after filtering, one Mirror
-  search result, ten matching backs, working inspector, no browser exceptions,
+  search result, ten matching backs, working inspector, brief-only card text, all 27 unique card codes and set
+  numbers, three image-only backs without text overlays, no browser exceptions,
   no card text overflow in any of four print variants, and no horizontal overflow
   on 390-pixel mobile screens in gallery, rules, or print shop.
 - `PUBLIC_BASE_PATH=/heavensgate bun run build`: static build passed. The home,
@@ -20,7 +21,7 @@ Verified on 20 November 2026 before opening the initial illustrated-components P
   A4 and Letter rulebooks each contain 16 pages; complete card decks each contain
   six pages; A4 fronts-only contains three; five-player table essentials each contain six, including two region mats.
 - PDF color streams are compressed while text remains vector and transparency
-  masks remain lossless. Original source PNGs and SVG layers are unchanged.
+  masks remain lossless. Compression does not modify source PNGs or SVG layers.
 
 The checks validate production layout and interaction. Physical printer feed
 registration depends on the printer; the print shop provides back offsets and

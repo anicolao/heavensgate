@@ -21,7 +21,7 @@ of Hell’s Bells and the physical print layouts of Pantheon. `bun run check`,
 `bun test`, and `bun run build` verify the project. The GitHub workflow builds
 the complete static site as a downloadable PR artifact and publishes a retained
 GitHub Pages preview at `https://anicolao.github.io/heavensgate/pr<number>/`.
-PR #1 is available at https://anicolao.github.io/heavensgate/pr1/.
+Each PR’s preview URL is listed in its workflow summary.
 The workflow does not merge the PR.
 
 Production builds from `main` publish at https://anicolao.github.io/heavensgate/.
@@ -33,9 +33,11 @@ or publish. This follows Hell’s Bells’ retained-preview convention.
 ## The tabletop kit
 
 Print one each of **12 Angel cards, 10 Heavenly Decrees, and 5 Final Judgments**.
-Every card measures **63 × 88 mm**. Category-specific backs conceal identities;
+Every card measures **63 × 88 mm**. Front footers show “Heaven’s Gate” on the
+left and a unique category code plus a global set number (1–27) on the right. Category-specific backs conceal identities;
 pages alternate fronts and horizontally mirrored backs for long-edge duplex.
-The print shop supports A4 and US Letter, full color or low ink, collection
+The print shop supports A4 and US Letter, full color or low-ink fronts with
+grayscale painted backs, collection
 filters, fronts/backs separately, and back-alignment offsets.
 
 Table essentials include five Favor tracks, two Sanctuary/Purgatory region mats (so both Sanctuary Angels can play),
@@ -60,8 +62,10 @@ same Organize action and on later turns.
 [`HEAVENS_GATE_RULES.md`](HEAVENS_GATE_RULES.md) is authoritative and contains all
 confirmed rulings. The two earlier Markdown files are historical inputs.
 `bun run catalog` extracts complete Angel, Decree, and Judgment rules into
-`src/lib/data/catalog.json`. Concise printable card copy is in
-`src/lib/data/game.ts`; the inspector and rulebook retain the full reference.
+`src/lib/data/catalog.json`. Every card has `brief` and `detailed` text metadata. The friendly `brief` text
+in `src/lib/data/game.ts` is used on card faces and SVG exports; `detailed` comes
+from the authoritative Markdown for reference use. Card faces and gallery
+inspectors show only the brief text and link to the full rulebook.
 
 `GameCard.svelte` is shared by gallery, teaching examples, and printable sheets.
 The rulebook contains five illustrated learning pages followed by the full
@@ -73,14 +77,17 @@ All 27 cards have original, individually generated painterly illustrations.
 The palette is cream, ivory, antique gold, and muted blue-grey. Source art is
 separate from typography and frames:
 
-- `static/art/source/`: 29 original PNGs: 27 foreground illustrations with real
-  alpha, one transparent ornamental frame, and one painted Heaven backdrop.
+- `static/art/source/`: 32 current source PNGs (plus archived variants): 27 foreground illustrations with real
+  alpha, one transparent ornamental frame, one painted Heaven backdrop, and
+  three distinct, fully painted card backs.
 - `static/art/cards/`: aspect-preserving WebP assets used by the shared renderer.
-- `static/art/layers/`: 27 self-contained card-front SVGs and three category-back SVGs, each with named Inkscape
+- `static/art/layers/`: 27 self-contained card-front SVGs with named Inkscape
   layers for paper, painted background, transparent illustration, editable native
-  text, and transparent frame. They embed their assets and can be downloaded
-  independently from each gallery inspector. Install the bundled app’s Cormorant
-  Garamond and Atkinson Hyperlegible fonts for matching source-editor text.
+  text, and frame. Three image-only back SVGs embed the finished paintings.
+  Assets and fonts are embedded for independent download. Install Cormorant
+  Garamond and Atkinson Hyperlegible for matching text in source editors.
+- `static/art/back-prompts.json`: exact prompts for the three painted card backs,
+  with no typography or design overlays.
 - `static/art/prompts.json`: exact prompts and transparency settings, generated
   with the built-in `image_gen` tool. No API/CLI image-generation fallback used.
 

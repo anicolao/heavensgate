@@ -7,6 +7,7 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as arch
     for path in sorted(Path('static/art/layers').glob('*.svg')):
         archive.write(path, 'layers/' + path.name)
     archive.write('static/art/prompts.json', 'prompts.json')
+    archive.write('static/art/back-prompts.json', 'back-prompts.json')
     archive.write('LICENSE', 'COPYING')
     archive.write('docs/artwork.md', 'README.md')
     for path in Path('docs/licenses').glob('*'):
