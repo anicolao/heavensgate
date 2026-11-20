@@ -1,0 +1,4 @@
+static/art/layers/*.svg linguist-generated=true
+static/art/cards/* linguist-generated=true
+src/lib/data/catalog.json linguist-generated=true
+static/downloads/* binary

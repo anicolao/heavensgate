@@ -1,0 +1,197 @@
+{
+  "angels": [
+    {
+      "id": "zadkiel",
+      "name": "Zadkiel",
+      "title": "Forgiveness",
+      "rule": "During your Organize action, take one unprotected soul from Heaven into your\nhand. You may contribute other souls and rearrange Heaven during that action.\nYou may also replay the retrieved soul in the same action; that delivery earns\nFavor normally, with no retrieval cost.\nThe final formations must be legal. Taking the soul is permitted even if you\ncontribute no souls. Retrieval costs no Favor, including when you also deliver\nother souls during the action. The retrieved soul earns Favor normally if played\non the same or a later turn.",
+      "kind": "angel"
+    },
+    {
+      "id": "raphael",
+      "name": "Raphael",
+      "title": "Penance",
+      "rule": "During your Organize action, remove one unprotected soul from Heaven into your\nPurgatory. You may play hand souls and rearrange Heaven as part of this same\naction, including before and after moving the soul into Purgatory. Finish Heaven\nlegally. Activating Penance consumes the power for the round.\n\nFor example, play your remaining hand into Heaven, move one excess table soul\ninto Purgatory to make the remaining formations legal, and finish the action.\nYour hand is empty, so you go out even though Purgatory is occupied.\n\nIf the round continues, then on later turns while Purgatory is occupied your\nordinary action is either to rescue that soul into a legal **Procession** or to\ndraw. You may rearrange unprotected Heaven to rescue it. Once rescued, the\nrestriction ends immediately: you may also play hand souls in that same Organize\naction. A failed rescue is restored and followed by a draw. The soul stays in\nPurgatory until rescued; it may not move to your hand or another player. An\nunrecovered soul counts in your penalty if another player goes out, but never\nprevents your own empty-hand finish. Its Favor treatment is in section 5.",
+      "kind": "angel"
+    },
+    {
+      "id": "selaphiel",
+      "name": "Selaphiel",
+      "title": "Sanctuary of Choirs",
+      "rule": "During your Organize action, move one complete legal Choir from shared Heaven\ninto your visible Sanctuary. This may be a Choir completed during that action.\nOnly you may move, add to, split, or rearrange protected tiles; any formations\nremaining in your Sanctuary must be legal Choirs. You may rearrange them together\nwith unprotected Heaven on your turns. Moving them into your hand still requires\na power that explicitly permits retrieval.\n\nYour Sanctuary is a special physical region on the table. All tiles currently\ninside it are protected, including tiles you add from your hand or shared Heaven.\nOnly you may rearrange or extend it, and all formations remaining inside must be\nlegal Choirs at the end of the action.\n\nYou may move tiles out into shared Heaven during your Organize action. They are\nthen available to everyone; protection is determined solely by current location,\nwith no permanent released status or original-tile records. For example, from a\nfour-tile Choir you may leave three safely inside Sanctuary and use the fourth\nin shared Heaven. If the Sanctuary is empty when your Organize action finishes,\nits once-per-round protection ends: remove its region marker, and do not establish another Sanctuary\nthat round. While it remains occupied, you may add tiles and rearrange its\ncontents freely. You may temporarily empty it while rearranging within one\naction, provided it contains legal formations when that action ends. Once closed,\nyou cannot establish another Sanctuary that round.",
+      "kind": "angel"
+    },
+    {
+      "id": "barachiel",
+      "name": "Barachiel",
+      "title": "Sanctuary of Processions",
+      "rule": "Use Selaphiel's rules, replacing **Choir** with **Procession** throughout.",
+      "kind": "angel"
+    },
+    {
+      "id": "chamuel",
+      "name": "Chamuel",
+      "title": "Communion",
+      "rule": "During your Organize action, choose an opponent. They randomize their hand face\ndown, keeping any Scales commitments in a separate group. Randomly select and\nreveal one soul with equal probability across all souls in both groups. You may deliver it directly into Heaven\nprovided you also deliver at least one soul from your own hand in that action.\nYou cannot keep the revealed soul in your hand. If you decline or cannot use it,\nreturn it to its owner and finish a normal Organize action or draw instead.\nThe power is spent once a soul is revealed, even if it is returned. If the\nOrganize attempt is rolled back, return the revealed soul but keep the power spent.",
+      "kind": "angel"
+    },
+    {
+      "id": "jophiel",
+      "name": "Jophiel",
+      "title": "Transfiguration",
+      "rule": "During your Organize action, take exactly two unprotected souls from Heaven into\nyour hand and deliver at least two souls that were in your hand before the\naction. The two retrieved souls must remain in your hand until this action ends;\nthey cannot satisfy the delivery requirement. Other rearrangement and additional\ncontributions are allowed. Finish Heaven legally and apply net Favor.",
+      "kind": "angel"
+    },
+    {
+      "id": "uriel",
+      "name": "Uriel",
+      "title": "Foretelling",
+      "rule": "When taking an ordinary Draw action, inspect up to eight random bag souls,\nchoose one, and return the rest. This replaces Favor selection for that draw.\nThe draw ends your turn. You cannot activate this with an empty bag.",
+      "kind": "angel"
+    },
+    {
+      "id": "jegudiel",
+      "name": "Jegudiel",
+      "title": "Zeal",
+      "rule": "After completing your turn, immediately take one additional full turn, provided\nthe round has not ended. Spend the power before starting that extra turn. Then\nplay passes to the next player clockwise. Zeal can follow a Draw action.",
+      "kind": "angel"
+    },
+    {
+      "id": "raguel",
+      "name": "Raguel",
+      "title": "Judgment",
+      "rule": "Before your ordinary action, return any positive number K of hand souls to the\nbag, mix, then blindly draw **2K** souls. Returned souls can be redrawn. Choose K\nonly if the bag will contain at least 2K souls after the return. Finish the whole\nexchange before checking for an empty hand. Then take your ordinary action.",
+      "kind": "angel"
+    },
+    {
+      "id": "haniel",
+      "name": "Haniel",
+      "title": "The Heavenly Dance",
+      "rule": "Before your ordinary action, choose a positive integer X no greater than the\nsmallest current hand size. Each player privately selects X hand souls, then all\npass them simultaneously to the player on their right (counterclockwise).\nSelections must be fixed before anyone sees incoming souls. Finish all transfers\nbefore checking for an empty hand. Then take your ordinary action. Purgatory and\nSanctuary souls cannot be passed. You cannot activate the power if X would be zero.",
+      "kind": "angel"
+    },
+    {
+      "id": "gabriel",
+      "name": "Gabriel",
+      "title": "Calling",
+      "rule": "Before your ordinary action, name one rank from 1 through 13. All opponents give\nyou every hand soul of that rank. They must comply honestly; their other souls\nremain private. You need not hold the rank and may call one nobody holds, spending\nthe power. Jokers and souls in Sanctuary or Purgatory are not affected. Scales\ncommitments on a rack are hand souls and must be given if their rank is called.\nCheck for anyone going out after all transfers; if the round continues, take your\nordinary action.",
+      "kind": "angel"
+    },
+    {
+      "id": "michael",
+      "name": "Michael",
+      "title": "Banishment",
+      "rule": "Before your ordinary action, choose a rank from 1 through 13 represented in your\nhand and one opponent. Give them **all** your hand souls of that rank. Jokers\ncannot be included. This may empty your hand and end the round immediately;\notherwise take your ordinary action.",
+      "kind": "angel"
+    }
+  ],
+  "decrees": [
+    {
+      "id": "decree-1",
+      "name": "Even and Odd",
+      "title": "Heavenly Decree",
+      "rule": "Processions advance by exactly 2 each step, in one color, with at least 3 souls. No wrapping. Example: red 2–4–6–8. Ordinary step-1 Processions are not legal.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-2",
+      "name": "All Are Welcome",
+      "title": "Heavenly Decree",
+      "rule": "Choirs still contain exactly 3 or 4 same-rank souls, but colors may repeat.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-3",
+      "name": "Colorful Processions",
+      "title": "Heavenly Decree",
+      "rule": "Processions use consecutive ascending ranks in any colors, with at least 3 souls. No wrapping.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-4",
+      "name": "Candy Cane",
+      "title": "Heavenly Decree",
+      "rule": "Processions use consecutive ascending ranks and alternate exactly two different colors, with at least 3 souls. No wrapping. Example: red 4, blue 5, red 6. Single-color Processions are not legal.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-5",
+      "name": "The Eternal Circle",
+      "title": "Heavenly Decree",
+      "rule": "Same-color Processions may cross 13→1, with at least 3 and at most 13 souls. No rank may repeat within one Procession. Example: blue 12–13–1–2. Nonwrapping Processions remain legal.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-6",
+      "name": "God's Poker Night",
+      "title": "Heavenly Decree",
+      "rule": "Ordinary Choirs and Processions remain legal. Also permit **Two Pair** (exactly 2 souls of each of two distinct ranks) and **Full House** (exactly 3 of one rank and 2 of a different rank). Colors may repeat in these added formations. They are neither Choirs nor Processions for powers.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-7",
+      "name": "The Grand Procession",
+      "title": "Heavenly Decree",
+      "rule": "Processions require at least 4 souls, with ordinary color and consecutive-rank rules.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-8",
+      "name": "Stairway to Heaven",
+      "title": "Heavenly Decree",
+      "rule": "Same-color Processions advance by 1 or 2 at each step, independently, with at least 3 souls. Ranks strictly increase; no wrapping. Example: red 3–5–6–8.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-9",
+      "name": "Heavenly Pairs",
+      "title": "Heavenly Decree",
+      "rule": "Choirs may contain 2, 3, or 4 same-rank souls, all different colors.",
+      "kind": "decree"
+    },
+    {
+      "id": "decree-10",
+      "name": "Mirror Choir",
+      "title": "Heavenly Decree",
+      "rule": "A Choir is exactly **2 souls of the same color**, with **different ranks totaling 14**: 1+13, 2+12, 3+11, 4+10, 5+9, or 6+8. Ordinary same-rank Choirs and 7+7 are not legal Choirs. Processions are unchanged.",
+      "kind": "decree"
+    }
+  ],
+  "judgments": [
+    {
+      "id": "judgment-1",
+      "name": "Divine Retribution",
+      "title": "Final Judgment",
+      "rule": "If a player who is not a Favorite wins the round, double every Favorite's\nundelivered penalty before calculating scores. If any Favorite wins, penalties\nare normal. The winner receives the increased penalties as part of their award.\nIn a stalemate, first choose the stalemate winner\nusing undoubled penalties, then apply doubling if that winner is not a Favorite;\ndo not choose the winner again.",
+      "kind": "judgment"
+    },
+    {
+      "id": "judgment-2",
+      "name": "Shared Sins",
+      "title": "Final Judgment",
+      "rule": "After seeing their starting hand but before the first turn, each player secretly\nwrites down one other player. Reveal all selections at round end. Each receives\nan independent credit equal to their selected player's penalty loss for the\nround, before Shared Sins credits. Selecting the round winner earns zero. Several\nplayers may select the same person. Credits do not reduce anyone else's loss or\nincrease the round winner's ordinary award.",
+      "kind": "judgment"
+    },
+    {
+      "id": "judgment-3",
+      "name": "The Scales of Justice",
+      "title": "Final Judgment",
+      "rule": "After the deal and before the first turn, each player may set aside **0–5\nnumbered souls** in a separate area of their own rack. These are their committed\nsouls and remain part of their hand. Their separate position identifies them;\nno tile markers or records of individual tile identities are needed. Jokers\ncannot be committed.\n\nAs soon as a committed soul is introduced into Heaven in a successfully completed\nlegal action, its owner earns a credit equal to its printed rank. Record that\ncredit on the scoresheet immediately: it is final. The delivered soul then\nbecomes an ordinary table soul. Later rearrangement, retrieval, or transfer never\nerases the credit and never makes that soul committed again. Ordinary Heaven and\nSanctuary both qualify as delivery.\n\nCommitted souls still set aside on the owner's rack at round end incur **triple**\ntheir normal penalty, replacing the ordinary single penalty. Personal delivery\ncredits do not increase the winner's ordinary award; tripled penalties do.\n\n**Transfers:** If a power moves a still-committed soul out of its\nowner's hand without delivering it into Heaven, its commitment ends. It earns no\ncredit and becomes an ordinary soul in its destination. Thus Calling, Banishment,\nHeavenly Dance, or Judgment require no continuing ownership or identity tracking.\nIf Communion delivers a committed soul directly from its owner's rack into Heaven,\nthe owner receives the permanent credit, while Chamuel receives ordinary Favor\nfor the delivery. Afterward the soul is ordinary, as with any committed delivery.",
+      "kind": "judgment"
+    },
+    {
+      "id": "judgment-4",
+      "name": "Divine Favor Head Start",
+      "title": "Final Judgment",
+      "rule": "Set each player's initial Favor to the number of players with a **strictly higher\ncumulative score**: first place gets 0, an untied second gets 1, and so on. Tied\nplayers receive the same head start. Continue earning and spending Favor normally.",
+      "kind": "judgment"
+    },
+    {
+      "id": "judgment-5",
+      "name": "Redemption",
+      "title": "Final Judgment",
+      "rule": "After normal round-three scoring, the round winner replaces their single most\nnegative round-one or round-two score with zero. If the two negative scores are\nequal, erase round one's. If neither is negative, there is no benefit. Recompute\nthat player's cumulative score; no other player's past score changes.",
+      "kind": "judgment"
+    }
+  ]
+}
