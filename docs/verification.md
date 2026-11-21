@@ -54,3 +54,11 @@ All nine PDFs and the layered-art bundle were regenerated and searched for the
 retired title. Desktop/mobile browser review passed with 27 numbered cards,
 no clipped text, no browser errors, and both paper sizes. The home, gallery,
 inspector, print sheet, cover, and Favor lesson previews were refreshed.
+
+Communion playtest update, 21 November 2026: Chamuel now privately inspects an
+opponent’s entire hand and chooses a soul. The authority, concise card text,
+legacy rules, and playtest sheet agree. All five card-deck PDFs, both rulebooks,
+the editable Chamuel SVG, and the layered bundle were refreshed and checked for
+the new wording. The card and both reference layouts were visually inspected;
+rulebooks remain 16 pages. Browser review found no text overflow in any of the
+four paper/art variants or mobile layouts. All seven tests pass (845 assertions).

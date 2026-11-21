@@ -32,7 +32,7 @@
       "id": "chamuel",
       "name": "Chamuel",
       "title": "Communion",
-      "detailed": "During your Organize action, choose an opponent. They randomize their hand face\ndown, keeping any Scales commitments in a separate group. Randomly select and\nreveal one soul with equal probability across all souls in both groups. You may deliver it directly into Heaven\nprovided you also deliver at least one soul from your own hand in that action.\nYou cannot keep the revealed soul in your hand. If you decline or cannot use it,\nreturn it to its owner and finish a normal Organize action or draw instead.\nThe power is spent once a soul is revealed, even if it is returned. If the\nOrganize attempt is rolled back, return the revealed soul but keep the power spent.",
+      "detailed": "During your Organize action, choose an opponent. Privately look at their entire\nhand, including any Scales commitments, and choose one soul. Keep any Scales\ncommitments in their separate group while inspecting the hand. Reveal your chosen\nsoul. You may deliver it directly into Heaven provided you also deliver at least\none soul from your own hand in that action. You cannot keep the chosen soul in\nyour hand. If you decline or cannot use it, return it to its owner and finish a\nnormal Organize action or draw instead.\nThe power is spent once you look at the opponent's hand, even if no soul is\nplayed. If the Organize attempt is rolled back, return the chosen soul but keep\nthe power spent.",
       "kind": "angel"
     },
     {

@@ -6,7 +6,7 @@ const presentation:Record<string,[string,string]> = {
  raphael:['During Organize','Set one soul from Heaven in Purgatory. On your next turn, rescue it into a procession. If you cannot, you must draw instead.'],
  selaphiel:['During Organize','Shelter a Choir in your Sanctuary. Only you may rearrange it.'],
  barachiel:['During Organize','Shelter a Procession in your Sanctuary. Only you may rearrange it.'],
- chamuel:['During Organize','Reveal a random soul from an opponent’s hand. Play it into Heaven along with at least one of your own, or return it.'],
+ chamuel:['During Organize','Look at an opponent’s whole hand. Choose a soul to play into Heaven with at least one of your own, or return it.'],
  jophiel:['During Organize','Swap two souls in Heaven for at least two from your hand.'],
  uriel:['When drawing','Look at eight souls from the bag. Keep one and return the rest.'],
  jegudiel:['After your turn','Take another turn.'],
