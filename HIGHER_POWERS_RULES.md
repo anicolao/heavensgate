@@ -285,14 +285,16 @@ Use Selaphiel's rules, replacing **Choir** with **Procession** throughout.
 
 ### Chamuel — Communion
 
-During your Organize action, choose an opponent. They randomize their hand face
-down, keeping any Scales commitments in a separate group. Randomly select and
-reveal one soul with equal probability across all souls in both groups. You may deliver it directly into Heaven
-provided you also deliver at least one soul from your own hand in that action.
-You cannot keep the revealed soul in your hand. If you decline or cannot use it,
-return it to its owner and finish a normal Organize action or draw instead.
-The power is spent once a soul is revealed, even if it is returned. If the
-Organize attempt is rolled back, return the revealed soul but keep the power spent.
+During your Organize action, choose an opponent. Privately look at their entire
+hand, including any Scales commitments, and choose one soul. Keep any Scales
+commitments in their separate group while inspecting the hand. Reveal your chosen
+soul. You may deliver it directly into Heaven provided you also deliver at least
+one soul from your own hand in that action. You cannot keep the chosen soul in
+your hand. If you decline or cannot use it, return it to its owner and finish a
+normal Organize action or draw instead.
+The power is spent once you look at the opponent's hand, even if no soul is
+played. If the Organize attempt is rolled back, return the chosen soul but keep
+the power spent.
 
 ### Jophiel — Transfiguration
 

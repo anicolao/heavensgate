@@ -195,11 +195,11 @@ The protected Procession must remain legal.
 
 **Chamuel — Communion**
 
-Once per round, randomly reveal one soul from a chosen opponent's hand.
+Once per round, look at a chosen opponent's entire hand and choose one soul.
 
 You may take that soul and deliver it into Heaven, provided you also contribute at least one soul from your own hand during the same turn.
 
-If you cannot or choose not to use it, return the revealed soul to its owner.
+If you cannot or choose not to use it, return the chosen soul to its owner. Looking at the hand spends the power, even if no soul is played.
 
 You receive Divine Favor credit for the net souls added to Heaven.
 

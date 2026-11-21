@@ -16,7 +16,7 @@
 2. **Raphael — Penance:** Put one soul from Heaven into your private Purgatory. While occupied, only attempt to place it into a procession or draw.
 3. **Selaphiel — Choir Sanctuary:** Protect one complete choir in your private Sanctuary; only you can rearrange it.
 4. **Barachiel — Procession Sanctuary:** As above, for a procession.
-5. **Chamuel — Communion:** Reveal one random soul from an opponent's hand; play it into Heaven if you also contribute at least one from your own hand.
+5. **Chamuel — Communion:** Look at an opponent's entire hand and choose one soul; play it into Heaven along with at least one from your own hand, or return it.
 6. **Jophiel — Transfiguration:** Take exactly two souls from Heaven into your hand while contributing at least two from your hand in the same turn; final table legal.
 
 **Hand / draw / tempo**
